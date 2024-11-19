@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .button-grid a {
+            text-align: center;
+            padding: 15px 20px;
+            background-color: #1abc9c;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .button-grid a:hover {
+            background-color: #16a085;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pet Cafe & Salon Management</h1>
+    </header>
+    <nav>
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="pet_records.html">Pet Records</a>
+        <a href="customer_records.html">Customer Records</a>
+        <a href="inventory_records.html">Inventory Records</a>
+        <a href="employee_records.html">Employee Records</a>
+        <a href="transactions.html">Transactions</a>
+        <a href="reports.html">Reports</a>
+    </nav>
+    <main>
+        <div class="card">
+            <h2>Records Management</h2>
+            <div class="button-grid">
+                <a href="pet_records.html">Manage Pet Records</a>
+                <a href="customer_records.html">Manage Customer Records</a>
+                <a href="inventory_records.html">Manage Inventory Records</a>
+                <a href="employee_records.html">Manage Employee Records</a>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Transactions</h2>
+            <div class="button-grid">
+                <a href="pet_booking.html">Pet Booking</a>
+                <a href="grooming_reservations.html">Grooming Reservations</a>
+                <a href="cafe_orders.html">Cafe Orders</a>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Reports</h2>
+            <div class="button-grid">
+                <a href="monthly_booking_report.html">Monthly Booking Report</a>
+                <a href="grooming_services_report.html">Grooming Services Report</a>
+                <a href="sales_inventory_report.html">Sales & Inventory Report</a>
+                <a href="employee_task_report.html">Employee Task Report</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pet Cafe & Salon Management</p>
+    </footer>
+</body>
+</html>
