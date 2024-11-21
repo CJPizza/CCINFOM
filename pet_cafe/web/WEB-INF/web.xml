@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+
+    <!-- Display Name -->
+    <display-name>Pet Cafe & Salon Management</display-name>
+
+    <!-- Welcome File -->
+    <welcome-file-list>
+        <welcome-file>dashboard.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- Add Inventory Servlet -->
+    <servlet>
+        <servlet-name>AddInventoryServlet</servlet-name>
+        <servlet-class>AddInventoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddInventoryServlet</servlet-name>
+        <url-pattern>/AddInventoryServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Update Inventory Servlet -->
+    <servlet>
+        <servlet-name>UpdateInventoryServlet</servlet-name>
+        <servlet-class>UpdateInventoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateInventoryServlet</servlet-name>
+        <url-pattern>/UpdateInventoryServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Delete Inventory Servlet -->
+    <servlet>
+        <servlet-name>DeleteInventoryServlet</servlet-name>
+        <servlet-class>DeleteInventoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteInventoryServlet</servlet-name>
+        <url-pattern>/DeleteInventoryServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- View Inventory Servlet -->
+    <servlet>
+        <servlet-name>ViewInventoryServlet</servlet-name>
+        <servlet-class>ViewInventoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewInventoryServlet</servlet-name>
+        <url-pattern>/ViewInventoryServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- CSS Resource -->
+    <mime-mapping>
+        <extension>css</extension>
+        <mime-type>text/css</mime-type>
+    </mime-mapping>
+
+    <!-- JavaScript Resource -->
+    <mime-mapping>
+        <extension>js</extension>
+        <mime-type>application/javascript</mime-type>
+    </mime-mapping>
+</web-app>
