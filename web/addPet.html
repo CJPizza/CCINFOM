@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Add a Pet Record</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div><b><big>Add A Pet Record:</big></b></div>
+        <form action="addPet.jsp" method='post'>
+            <br>
+            <label for="petname">Pet Name</label>
+            <input type="text" id="petname" name="petname" required><br>
+            <br>
+            <label for="petspecies">Pet Species</label>
+            <input type="text" id="petspecies" name="petspecies" required><br>
+            <br>
+            <label for="petbreed">Pet Breed</label>
+            <input type="text" id="petbreed" name="petbreed" required><br>
+            <br>
+            <label for="ownerid">Owner ID</label>
+            <input type="number" id="ownerid" name="ownerid" required><br>
+            <input type="submit" value="Submit Pet Record">
+            <br>
+        </form>
+    </body>
+</html>

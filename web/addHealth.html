@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Add Health History to Pet</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div><b><big>Add Health History to Pet</big></b></div>
+        <form action="addHealth.jsp" method='post'>
+            <br>
+            <label for="petid">Pet ID</label>
+            <input type="number" id="petid" name="petid" required><br>
+            <br>
+            <label for="vaccination_status">Pet Vaccination Status</label>
+            <select name="vaccination_status" id="vaccination_status">
+                <option value="vaccinated">Vaccinated</option>
+                <option value="unvaccinated">Unvaccinated</option>
+            </select>
+            <br> <br>
+            <label for="specialneeds">Pet Special Needs</label>
+            <input type="text" id="specialneeds" name="specialneeds" required><br>
+            <br>
+            <label for="ongoingtreatment">Pet Ongoing Treatment</label>
+            <input type="text" id="ongoingtreatment" name="ongoingtreatment" required><br>
+            <br>
+            <label for="treatment_start">Treatment Start Date</label>
+            <input type="date" id="treatment_start" name="treatment_start" required><br>
+            <br>
+            <label for="treatment_end">Treatment End Date</label>
+            <input type="date" id="treatment_end" name="treatment_end" required><br>
+            <input type="submit" value="Submit Pet Health History">
+            <br>
+        </form>
+    </body>
+</html>
